@@ -8,7 +8,7 @@ class BulletinBoard < Sinatra::Base
 
   put '/' do
     authorize!
-    redis.hset :bulletin, :bulletin, params[:bulletin]
+    redis.hset :bulletin, :bulletin, params['bulletin']
     status 201
   end
 
