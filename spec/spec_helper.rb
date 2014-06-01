@@ -8,5 +8,5 @@ require './app'
 include Rack::Test::Methods
 
 def app
-  Sinatra::Application
+  BulletinBoard
 end
